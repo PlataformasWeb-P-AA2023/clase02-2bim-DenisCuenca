@@ -74,12 +74,26 @@ WSGI_APPLICATION = 'proyectouno.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# configura la base de datos para postgres
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'admin',
+        'USER': 'invitado',
+        'PASSWORD': 'UTPLUTPL',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+"""
 
 
 # Password validation

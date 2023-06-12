@@ -25,3 +25,17 @@ class Estudiante(models.Model):
                 self.cedula,
                 self.edad,
                 self.tipo_estudiante)
+
+
+# create model pais with fields name and capital
+
+class Pais(models.Model):
+    nombre = models.CharField(max_length=30)
+    capital = models.CharField(max_length=30)
+
+    def __str__(self):
+        return "%s - %s" % (self.nombre, self.capital)
+    
+    class Meta:
+        verbose_name = "Pais"
+        verbose_name_plural = "Paises"

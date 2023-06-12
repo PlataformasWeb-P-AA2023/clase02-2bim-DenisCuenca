@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+
+            <td>nombre</td>
+            <td>apellido</td>
+            <td>cedula</td>
+            <td>edad</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        {% for e in estudiantes %}
+        <tr>
+            <td>{{e.nombre}}</td>
+            <td>{{e.apellido}}</td>
+            <td>{{e.cedula}}</td>
+            <td>{{e.edad}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
