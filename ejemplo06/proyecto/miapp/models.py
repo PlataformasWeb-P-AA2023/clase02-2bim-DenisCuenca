@@ -5,7 +5,7 @@ class Estudiante(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
     cedula = models.CharField(max_length=30, unique=True)
-    edad = models.IntegerField()
+    edad = models.IntegerField("edad de estudiante")
 
 
     def __str__(self):

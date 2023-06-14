@@ -25,7 +25,7 @@ class PaisAdmin(admin.ModelAdmin):
     # se deja de usar la representación (str)
     # de la clase
     list_display = ("pk", 'nombre', 'capital')
-    search_fields = ( "pk", 'nombre', 'capital')
+    search_fields = ( "pk",'nombre', 'capital')
 
 
 admin.site.register(Estudiante, EstudianteAdmin)

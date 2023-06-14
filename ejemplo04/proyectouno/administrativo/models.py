@@ -53,3 +53,6 @@ class Matricula(models.Model):
     def __str__(self):
         return "Matricula: Estudiante(%s) - Modulo(%s)" % \
                 (self.estudiante, self.modulo.nombre)
+    
+    class Meta:
+            unique_together = ('estudiante', 'modulo')
